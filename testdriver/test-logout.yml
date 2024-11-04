@@ -1,0 +1,26 @@
+version: 4.0.79
+steps:
+  - prompt: Ensure the user is logged in.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: button to reload the page
+        action: click
+  - prompt: Ensure the user is logged in.
+    commands:
+      - command: hover-text
+        text: try running Windows Network Diagnostics
+        description: link to run network diagnostics
+        action: click
+  - prompt: Ensure the user is logged in.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Close the troubleshooter
+        description: option to close the network diagnostics
+        action: click
+      - command: hover-text
+        text: Sign In
+        description: link to sign in on the webpage
+        action: click
