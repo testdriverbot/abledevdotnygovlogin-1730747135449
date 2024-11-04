@@ -1,0 +1,39 @@
+version: 4.0.79
+steps:
+  - prompt: Click on "FAQ" or "Help" in the footer.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the page
+        action: click
+  - prompt: Click on "FAQ" or "Help" in the footer.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+      - command: wait
+        timeout: 5000
+      - command: scroll-until-text
+        text: FAQ
+        direction: down
+      - command: hover-text
+        text: FAQ
+        description: FAQ link in the footer
+        action: click
+  - prompt: Click on "FAQ" or "Help" in the footer.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - shift
+          - r
+      - command: wait
+        timeout: 5000
+      - command: scroll-until-text
+        text: Help
+        direction: down
+      - command: hover-text
+        text: Help
+        description: Help link in the footer
+        action: click
