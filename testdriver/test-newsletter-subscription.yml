@@ -1,0 +1,14 @@
+version: 4.0.79
+steps:
+  - prompt: Navigate to the footer area.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Navigate to the footer area.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Navigate to the footer area.
+    commands:
+      - command: scroll
+        direction: down
